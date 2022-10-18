@@ -1,0 +1,154 @@
+/* Подключение шрифтов */
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;900&display=swap");
+
+@font-face {
+  font-family: "Agustina";
+  src: url(./fonts/Agustina.otf);
+}
+
+/* Сброс стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Фон страницы */
+body {
+  background-color: rgb(-0 5 54);
+}
+
+/* Установка стандартного шрифта для параграфов */
+p {
+  color: white;
+  font-family: "Maven Pro";
+}
+
+/* Класс центрирования */
+.centered {
+  margin: auto;
+}
+
+/* Элемент карусели */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ограничение контейнера-секции */
+section {
+  padding: 0 calc(50% - 590px);
+}
+
+/* Заголовок BE THE BEST */
+section.join-us > header > h1 {
+  color: white;
+  font-family: "Maven Pro";
+  font-weight: bold;
+  text-align: center;
+  font-size: 36pt;
+}
+
+/* Подзаголовок SWIMMER */
+section.join-us > header > h2 {
+  color: white;
+  font-family: "Maven Pro";
+  font-weight: 600;
+  text-align: center;
+  font-size: 24pt;
+  margin-top: 12px;
+}
+
+/* Квадрат в правой части страницы */
+img.large-square {
+  position: absolute;
+  right: 21%;
+  top: -8%;
+}
+
+/* Квадрат в левой части страницы */
+img.medium-square {
+  position: absolute;
+  left: 13%;
+  top: 10%;
+}
+
+/* Изображение пловца */
+img.swimmer {
+  max-height: 400px;
+}
+
+/* Круг около заголовка */
+img.dotted-circle {
+  position: absolute;
+  left: 33.2%;
+  top: 4%;
+}
+
+/* Элемент цитаты внизу страницы */
+.blockquote {
+  position: relative;
+}
+
+/* Текст цитаты */
+.blockquote > p.quote {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Текст join us после цитаты */
+.blockquote > p.join-us {
+  position: absolute;
+  bottom: -30%;
+  font-family: "Agustina";
+  font-size: 72pt;
+  color: yellow;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Рамка цитаты */
+img.corner-line {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Нижняя панель элемента */
+.limited-offer {
+  margin-top: 150px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 180px;
+}
+
+/* Жёлтый круг в нижнем элементе сайта */
+.circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  font-size: 28pt;
+  background: rgb(255 243 2);
+}
+
+/* Текст в круге */
+.circle > p {
+  margin-top: 20px;
+  color: black;
+  text-align: center;
+  font-family: "Maven Pro";
+  font-weight: 900;
+}
+
+/* Текст в нижнем элементе сайта */
+.limited-offer > p.offer-text {
+  font-family: "Maven Pro";
+  color: white;
+  font-size: 36pt;
+}
